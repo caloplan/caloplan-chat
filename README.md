@@ -2,6 +2,23 @@
 
 CaloPlan 前端 Chat SDK —— 对接 **fastapi-chat-service**（SSE 流式对话），本地聊天记录经 **caloplan-cache** 缓存。
 纯 TypeScript、框架无关（Vue / React / React Native / Web 通用），不直接操作 localStorage，不实现登录。
+## 相关项目（CaloPlan 全家桶）
+
+CaloPlan 全栈项目统一托管在 GitHub Organization [caloplan](https://github.com/caloplan)：
+
+| 类型 | 项目 | 与本项目关系 |
+| --- | --- | --- |
+| 前端 | [coloplan-v2](https://github.com/caloplan/coloplan-v2) | 上层客户端：复用本模块的 AI 对话能力 |
+| SDK | [caloplan-core](https://github.com/caloplan/caloplan-core) | 餐食 / 食物模块（兄弟 SDK） |
+| SDK | [caloplan-user](https://github.com/caloplan/caloplan-user) | 用户模块（兄弟 SDK） |
+| SDK（本仓库） | [caloplan-chat](https://github.com/caloplan/caloplan-chat) | AI 对话 SDK（SSE 流式） |
+| SDK | [caloplan-cache](https://github.com/caloplan/caloplan-cache) | 本地聊天历史经其缓存 |
+| 服务 | [fastapi-chat-service](https://github.com/caloplan/fastapi-chat-service) | AI 对话后端（本模块对接的 HTTP / SSE 服务） |
+| 服务 | [fastapi-file-service](https://github.com/caloplan/fastapi-file-service) | 图片上传后端（图片识别链路） |
+| 服务 | [mservice-fastapi-user](https://github.com/caloplan/mservice-fastapi-user) | 认证 / 用户微服务（Token 来源） |
+| 服务 | [mservice-fastapi-metastorage](https://github.com/caloplan/mservice-fastapi-metastorage) | 元数据微服务（AI 工具写餐食 / 身体数据） |
+
+本模块对接 `fastapi-chat-service`（SSE 流式对话），本地历史经 `caloplan-cache` 持久化。
 
 ```
 CaloPlan Frontend
