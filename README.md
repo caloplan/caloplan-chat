@@ -2,6 +2,7 @@
 
 CaloPlan 前端 Chat SDK —— 对接 **fastapi-chat-service**（SSE 流式对话），本地聊天记录经 **caloplan-cache** 缓存。
 纯 TypeScript、框架无关（Vue / React / React Native / Web 通用），不直接操作 localStorage，不实现登录。
+
 ## 相关项目（CaloPlan 全家桶）
 
 CaloPlan 全栈项目统一托管在 GitHub Organization [caloplan](https://github.com/caloplan)：
